@@ -1,0 +1,17 @@
+<section id="pastor">
+    <h2>Our Pastor</h2>
+    <div style="display:flex; flex-wrap:wrap; gap:30px; align-items:center; justify-content:center; margin-top:30px;">
+        <img src="pastor-photo.jpg" alt="Pastor of Life Bridge Church" style="width:280px; height:280px; object-fit:cover; border-radius:50%; border:5px solid var(--primary-blue);">
+        <div style="max-width:500px; text-align:left;">
+            <h3 style="color:var(--primary-blue); margin-bottom:10px;">Pastor [Name]</h3>
+            <p style="line-height:1.8; font-size:1.05em;">
+                Pastor [Mukwaya Godfrey] leads Life Bridge Church with a heart for God and people.
+                His vision is to see every soul connected to Christ and living in purpose.
+                Together with his family, he serves this community with love, prayer, and the Word.
+            </p>
+            <p style="margin-top:15px; font-style:italic; color:#555;">
+                "To bridge lives to Jesus Christ" - our mission
+            </p>
+        </div>
+    </div>
+</section>
