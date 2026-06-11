@@ -6,16 +6,62 @@
 <title>LifeBridge Church - Bridge Lives to Jesus Christ</title>
 <style>
 * { margin: 0; padding: 0; box-sizing: border-box; }
-body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: #333; background: #f9f9f9; }
-.container { max-width: 1100px; margin: 0 auto; padding: 20px; }
-header { background: linear-gradient(135deg, #003366 0%, #0055aa 100%); color: white; text-align: center; padding: 60px 20px; }
-.header-logo { width: 120px; height: 120px; object-fit: contain; margin-bottom: 20px; background: white; padding: 10px; border-radius: 50%; box-shadow: 0 4px 15px rgba(0,0,0,0.3); }
-header h1 { font-size: 2.5em; margin-bottom: 10px; }
-header p { font-size: 1.2em; opacity: 0.9; }
-section { background: white; margin: 40px 0; padding: 50px 30px; border-radius: 12px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+body { 
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+  line-height: 1.6; 
+  color: #333; 
+  background: #f9f9f9;
+  overflow-x: hidden;
+  position: relative;
+}
+body::before {
+  content: "";
+  position: fixed;
+  top: -10%;
+  left: -10%;
+  width: 120%;
+  height: 120%;
+  background-image: url('worship-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  filter: blur(8px);
+  animation: worshipFloat 40s ease-in-out infinite;
+  z-index: -2;
+}
+body::after {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 51, 102, 0.82); /* blue tint overlay */
+  z-index: -1;
+}
+@keyframes worshipFloat {
+ 0%, 100% { 
+    transform: scale(1) translate(0, 0); 
+  }
+ 33% { 
+    transform: scale(1.08) translate(-1%, -1%); 
+  }
+ 66% { 
+    transform: scale(1.05) translate(1%, -0.5%); 
+  }
+}
+.container { max-width: 1100px; margin: 0 auto; padding: 20px; position: relative; z-index: 1; }
+header { background: linear-gradient(135deg, rgba(0,51,102,0.95) 0%, rgba(0,85,170,0.95) 100%); color: white; text-align: center; padding: 60px 20px; border-radius: 0 0 20px 20px; backdrop-filter: blur(10px); }
+.header-logo { width: 120px; height: 120px; object-fit: contain; margin-bottom: 20px; background: white; padding: 10px; border-radius: 50%; box-shadow: 0 4px 20px rgba(0,0,0,0.4); animation: logoFloat 6s ease-in-out infinite; }
+@keyframes logoFloat {
+ 0%, 100% { transform: translateY(0px); }
+ 50% { transform: translateY(-8px); }
+}
+header h1 { font-size: 2.5em; margin-bottom: 10px; text-shadow: 2px 2px 8px rgba(0,0,0,0.4); }
+header p { font-size: 1.2em; opacity: 0.95; text-shadow: 1px 1px 4px rgba(0,0,0,0.3); }
+section { background: rgba(255,255,255,0.97); margin: 40px 0; padding: 50px 30px; border-radius: 16px; box-shadow: 0 10px 40px rgba(0,0,0,0.18); backdrop-filter: blur(6px); border: 1px solid rgba(255,255,255,0.3); }
 h2 { color: #003366; text-align: center; font-size: 2em; margin-bottom: 30px; }
-.btn { display: inline-block; background: #003366; color: white; padding: 14px 30px; text-decoration: none; border-radius: 8px; margin: 8px; font-weight: bold; font-size: 1em; transition: 0.3s; }
-.btn:hover { background: #0055aa; transform: translateY(-3px); }
+.btn { display: inline-block; background: #003366; color: white; padding: 14px 30px; text-decoration: none; border-radius: 8px; margin: 8px; font-weight: bold; font-size: 1em; transition: 0.3s; box-shadow: 0 4px 12px rgba(0,0,0,0.2); }
+.btn:hover { background: #0055aa; transform: translateY(-4px) scale(1.02); box-shadow: 0 8px 20px rgba(0,0,0,0.3); }
 .btn-whatsapp { background: #25D366; }
 .btn-whatsapp:hover { background: #1ebe5d; }
 .btn-youtube { background: #FF0000; }
@@ -23,22 +69,25 @@ h2 { color: #003366; text-align: center; font-size: 2em; margin-bottom: 30px; }
 .btn-wise { background: #00b1ba; }
 .btn-worldremit { background: #1a73e8; }
 .btn-sendwave { background: #ff6b00; }
-.donate-box { background: linear-gradient(135deg, #003366 0%, #003366 100%); color: white; text-align: center; padding: 40px 20px; border-radius: 12px; }
+.donate-box { background: linear-gradient(135deg, rgba(0,51,102,0.95) 0%, rgba(0,51,102,0.95) 100%); color: white; text-align: center; padding: 40px 20px; border-radius: 12px; backdrop-filter: blur(8px); }
 .donate-box h2 { color: white; }
 .vision-box { display:grid; grid-template-columns:repeat(auto-fit, minmax(250px, 1fr)); gap:25px; margin-top:30px; }
-.vision-card { background:linear-gradient(135deg, #e6f7ff 0%, #f0f8ff 100%); padding:30px; border-radius:12px; text-align:center; border-top:4px solid #003366; }
+.vision-card { background:rgba(230,247,255,0.95); padding:30px; border-radius:12px; text-align:center; border-top:4px solid #003366; transition: transform 0.3s; }
+.vision-card:hover { transform: translateY(-5px); }
 .vision-card h3 { color:#003366; margin-bottom:15px; font-size:1.4em; }
 .branches-grid { display:grid; grid-template-columns:repeat(auto-fit, minmax(300px, 1fr)); gap:25px; margin-top:30px; }
-.branch-card { background:linear-gradient(135deg, #003366 0%, #0055aa 100%); color:white; padding:30px; border-radius:12px; text-align:center; }
+.branch-card { background:linear-gradient(135deg, rgba(0,51,102,0.95) 0%, rgba(0,85,170,0.95) 100%); color:white; padding:30px; border-radius:12px; text-align:center; transition: transform 0.3s; }
+.branch-card:hover { transform: translateY(-5px); }
 .branch-card h3 { font-size:1.5em; margin-bottom:10px; }
 .branch-card p { font-size:1.1em; margin:8px 0; opacity:0.95; }
 .testimonies-grid { display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:25px; margin-top:30px; }
-.testimony-card { background:#fff8f0; padding:25px; border-radius:12px; border-left:5px solid #ff6b00; box-shadow:0 2px 8px rgba(0,0,0,0.08); }
+.testimony-card { background:rgba(255,248,240,0.98); padding:25px; border-radius:12px; border-left:5px solid #ff6b00; box-shadow:0 2px 8px rgba(0,0,0,0.08); transition: transform 0.3s; }
+.testimony-card:hover { transform: translateY(-5px); }
 .testimony-card h3 { color:#003366; margin-bottom:10px; font-size:1.3em; }
 .testimony-card p { font-style:italic; line-height:1.8; color:#444; }
 .testimony-tag { display:inline-block; background:#003366; color:white; padding:4px 12px; border-radius:20px; font-size:0.85em; margin-top:10px; }
 .giving-grid { display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:20px; margin-top:30px; text-align:left; }
-.giving-card { background:#f0f8ff; padding:25px; border-radius:10px; border-left:5px solid #003366; }
+.giving-card { background:rgba(240,248,255,0.98); padding:25px; border-radius:10px; border-left:5px solid #003366; }
 .giving-card h3 { color:#003366; margin-bottom:15px; }
 .map-box { margin-top:30px; border-radius:12px; overflow:hidden; }
 @media (max-width: 768px) {
@@ -46,6 +95,7 @@ h2 { color: #003366; text-align: center; font-size: 2em; margin-bottom: 30px; }
   .header-logo { width: 90px; height: 90px; }
   section { padding: 30px 15px; }
   .btn { display: block; margin: 10px 0; }
+  body::before { filter: blur(5px); animation: worshipFloat 60s ease-in-out infinite; }
 }
 </style>
 </head>
