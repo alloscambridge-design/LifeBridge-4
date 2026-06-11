@@ -14,23 +14,13 @@ font-family:Arial, sans-serif;
 }
 
 body{
-    <!-- Test pastor photo -->
-<img src="pastor-photo.jpg" alt="Pastor" style="width:200px; border:3px solid green; display:block; margin:20px auto;">
-
-<!-- Gallery test -->
-<h2 style="text-align:center;">Church Gallery</h2>
-<img src="gallery1.jpg" style="width:150px;">
-<img src="gallery2.jpg" style="width:150px;">
-<img src="gallery3.jpg" style="width:150px;">
-<img src="gallery4.jpg" style="width:150px;">
 background:#f5f5f5;
 color:#333;
 line-height:1.6;
 }
 
 header{
-background:linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.65)),
-url('images/church1.jpg');
+background:linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.65)), url('church1.jpg');
 background-size:cover;
 background-position:center;
 height:100vh;
@@ -71,13 +61,8 @@ font-weight:bold;
 color:white;
 }
 
-.youtube{
-background:#ff0000;
-}
-
-.whatsapp{
-background:#25D366;
-}
+.youtube{background:#ff0000;}
+.whatsapp{background:#25D366;}
 
 .container{
 max-width:1200px;
@@ -96,32 +81,30 @@ box-shadow:0 2px 10px rgba(0,0,0,.1);
 h2{
 color:#0b4d78;
 margin-bottom:15px;
-}<section id="pastor">
-    <h2>Our Pastor</h2>
-    <div style="text-align:center; margin-top:30px;"><img src="pastor-photo.jpg" style="width:150px; border:2px solid green;">
-        <img src="pastor-photo.jpg" alt="Pastor of Life Bridge Church" style="width:280px; height:280px; object-fit:cover; border-radius:50%; border:5px solid #00AEEF;">
-    </div>
-<section id="gallery">
-    <h2>Church Gallery</h2>
-    <p style="text-align:center; margin-bottom:30px; color:#555;">Moments of worship, love, and community</p>
-    
-    <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(250px, 1fr)); gap:15px;">
-        <img src="gallery1.jpg" alt="Morning Glory Service" style="width:100%; height:250px; object-fit:cover; border-radius:12px; box-shadow:0 4px 8px rgba(0,0,0,0.1);">
-        <img src="gallery2.jpg" alt="Praise & Worship" style="width:100%; height:250px; object-fit:cover; border-radius:12px; box-shadow:0 4px 8px rgba(0,0,0,0.1);">
-        <img src="gallery3.jpg" alt="Church Family" style="width:100%; height:250px; object-fit:cover; border-radius:12px; box-shadow:0 4px 8px rgba(0,0,0,0.1);">
-        <img src="gallery4.jpg" alt="Sunday Service" style="width:100%; height:250px; object-fit:cover; border-radius:12px; box-shadow:0 4px 8px rgba(0,0,0,0.1);">
-    </div>
-</section>
-    
+}
+
+.pastor-img{
+width:280px;
+height:280px;
+object-fit:cover;
+border-radius:50%;
+border:5px solid #00AEEF;
+display:block;
+margin:20px auto;
+}
+
 .gallery{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+grid-template-columns:repeat(auto-fit, minmax(250px, 1fr));
 gap:15px;
 }
 
 .gallery img{
 width:100%;
-border-radius:10px;
+height:250px;
+object-fit:cover;
+border-radius:12px;
+box-shadow:0 4px 8px rgba(0,0,0,0.1);
 }
 
 .contact-grid{
@@ -130,8 +113,7 @@ grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
 gap:20px;
 }
 
-input,
-textarea{
+input, textarea{
 width:100%;
 padding:12px;
 margin:8px 0;
@@ -160,14 +142,10 @@ color:#8fdfff;
 text-decoration:none;
 }
 
-ul{
-padding-left:20px;
-}
+ul{padding-left:20px;}
 
 @media(max-width:768px){
-header h1{
-font-size:2rem;
-}
+header h1{font-size:2rem;}
 }
 </style>
 </head>
@@ -175,94 +153,47 @@ font-size:2rem;
 <body>
 
 <header>
-
-<img src="images/logo.png" alt="LifeBridge Church Logo" class="logo">
+<img src="logo.png" alt="LifeBridge Church Logo" class="logo">
 
 <h1>LifeBridge Church Uganda</h1>
-
 <h2>Reaching Souls • Raising Disciples • Planting Churches</h2>
-
 <p><strong>Building Lives, Connecting People to Christ</strong></p>
-
 <p><em>"I have come that they may have life, and have it more abundantly." - John 10:10</em></p>
 
 <div>
-<a href="https://youtube.com/@lifebridgechapelinternatio5611?si=K8NCSc2eBlgGT65T"
-target="_blank"
-class="btn youtube">
-▶ Watch Live
-</a>
-
-<a href="https://wa.me/256705843553"
-target="_blank"
-class="btn whatsapp">
-💬 WhatsApp Us
-</a>
+<a href="https://youtube.com/@lifebridgechapelinternatio5611?si=K8NCSc2eBlgGT65T" target="_blank" class="btn youtube">▶ Watch Live</a>
+<a href="https://wa.me/256705843553" target="_blank" class="btn whatsapp">💬 WhatsApp Us</a>
 </div>
-
 </header>
 
 <div class="container">
 
 <div class="card">
 <h2>Welcome to LifeBridge Church</h2>
-
-<p>
-LifeBridge Church Uganda is a Christ-centered ministry dedicated to winning souls,
-making disciples, planting churches and transforming communities through the Gospel
-of Jesus Christ.
-</p>
+<p>LifeBridge Church Uganda is a Christ-centered ministry dedicated to winning souls, making disciples, planting churches and transforming communities through the Gospel of Jesus Christ.</p>
 </div>
 
 <div class="card">
 <h2>Our Vision</h2>
-
-<p>
-<strong>Soul Winning and Church Planting</strong>
-</p>
-
-<p>
-We exist to reach people with the love of Christ,
-raise disciples, establish healthy churches and impact nations for God's Kingdom.
-</p>
+<p><strong>Soul Winning and Church Planting</strong></p>
+<p>We exist to reach people with the love of Christ, raise disciples, establish healthy churches and impact nations for God's Kingdom.</p>
 </div>
 
 <div class="card">
 <h2>Our Story</h2>
-
-<p>
-LifeBridge Church Uganda was founded by
-<strong>Pastor Godfrey Mukwaya</strong>
-in 2022 in the small village of Kajjansi,
-Wakiso District, Uganda.
-</p>
-
-<p>
-Through God's grace the church has grown into
-a thriving ministry with over
-<strong>100 registered members</strong>.
-</p>
-
-<p>
-The ministry continues to grow through evangelism,
-discipleship, church planting and community outreach.
-</p>
+<p>LifeBridge Church Uganda was founded by <strong>Pastor Godfrey Mukwaya</strong> in 2022 in the small village of Kajjansi, Wakiso District, Uganda.</p>
+<p>Through God's grace the church has grown into a thriving ministry with over <strong>100 registered members</strong>.</p>
+<p>The ministry continues to grow through evangelism, discipleship, church planting and community outreach.</p>
 </div>
 
-<div class="card">
+<section id="pastor" class="card">
 <h2>Founder & Lead Pastor</h2>
-
-<p>
-<strong>Pastor Godfrey Mukwaya</strong>
-is the founder and lead pastor of LifeBridge Church Uganda.
-His passion is to see lives transformed through the Gospel,
-raise leaders and establish churches that impact communities.
-</p>
-</div>
+<img src="pastor-photo.jpg" alt="Pastor Godfrey Mukwaya" class="pastor-img">
+<p style="text-align:center;"><strong>Pastor Godfrey Mukwaya</strong> is the founder and lead pastor of LifeBridge Church Uganda. His passion is to see lives transformed through the Gospel, raise leaders and establish churches that impact communities.</p>
+</section>
 
 <div class="card">
 <h2>Service Times</h2>
-
 <ul>
 <li>Sunday Celebration Service – 9:00 AM</li>
 <li>Tuesday Midweek Service – 6:00 PM</li>
@@ -272,42 +203,34 @@ raise leaders and establish churches that impact communities.
 
 <div class="card">
 <h2>Our Branches</h2>
-
 <h3>Nansana Branch – Kampala</h3>
 <p>Pastored by Pastor Phiona Rhene Nalwanga</p>
-
 <br>
-
 <h3>Mukono Branch</h3>
 <p>Pastored by Pastor Ebenezer Cyrus</p>
 </div>
 
+<section id="gallery" class="card">
+<h2>Church Gallery</h2>
+<p style="text-align:center; margin-bottom:30px; color:#555;">Moments of worship, love, and community</p>
+<div class="gallery">
+<img src="gallery1.jpg" alt="Morning Glory Service">
+<img src="gallery2.jpg" alt="Praise & Worship">
+<img src="gallery3.jpg" alt="Church Family">
+<img src="gallery4.jpg" alt="Sunday Service">
+</div>
+</section>
+
 <div class="card">
 <h2>Community Impact & Education Support</h2>
-
-<p>
-LifeBridge Church believes every child deserves hope and access to education.
-</p>
-
-<p>
-We support vulnerable children to return to school and complete their education.
-</p>
-
-<p>
-Currently the church supports
-<strong>10 children</strong>
-through educational assistance and mentorship.
-</p>
-
-<p>
-We welcome individuals, churches and organizations to partner with us in giving
-children hope through education and the love of Jesus Christ.
-</p>
+<p>LifeBridge Church believes every child deserves hope and access to education.</p>
+<p>We support vulnerable children to return to school and complete their education.</p>
+<p>Currently the church supports <strong>10 children</strong> through educational assistance and mentorship.</p>
+<p>We welcome individuals, churches and organizations to partner with us in giving children hope through education and the love of Jesus Christ.</p>
 </div>
 
 <div class="card">
 <h2>Partner With Us</h2>
-
 <ul>
 <li>Support School Fees</li>
 <li>Provide Scholastic Materials</li>
@@ -319,158 +242,76 @@ children hope through education and the love of Jesus Christ.
 </div>
 
 <div class="card">
-  <!-- DONATION SECTION -->
 <section id="give">
-  <h2>Give / Tithe / Offerings</h2>
-  <p style="text-align:center; max-width:700px; margin:0 auto 25px;">Your giving helps us bridge lives to Christ through ministry, outreach, and community support. “Bring the whole tithe into the storehouse” - Malachi 3:10</p>
-  
-  <!-- International Donations -->
-  <h3 style="text-align:center; color:var(--dark-blue); margin-bottom:15px;">International Donations</h3>
-  <div class="donate-grid">
-<div style="display:flex; gap:12px; flex-wrap:wrap; justify-content:center; margin-top:20px;">
-    <a href="https://www.worldremit.com" class="donate-btn" target="_blank">🌍 Send via WorldRemit</a>
-    <a href="https://www.sendwave.com" class="donate-btn" target="_blank">📱 Send via Sendwave</a>
-    <a href="https://wa.me/256705843553?text=Hello%20LifeBridge%20Church%2C%20I%20want%20to%20give%20my%20offering" class="donate-btn" target="_blank">💬 WhatsApp to Give</a>
-</div>
-  
-<div style="background:#e6f4ff; padding:18px; border-radius:8px; margin-top:20px; text-align:center;">
-    <p style="font-weight:bold; color:var(--dark-blue); margin-bottom:8px;">How to send from abroad:</p>
-    <p>1. Click WorldRemit or Sendwave button</p>
-    <p>2. Select your country → Choose "Uganda"</p>
-    <p>3. Select "Mobile Money" → MTN Mobile Money</p>
-    <p>4. Recipient: <strong>Life Bridge Church</strong></p>
-    <p>5. Number: <strong>0776 420 855</strong></p>
-    <p style="font-size:0.9em; margin-top:10px; opacity:0.8;">Funds arrive instantly. No direct links needed.</p>
-</div>
-  <p style="font-size:0.9em; margin-top:12px; opacity:0.8;">
-  After clicking: Select "Uganda" → "Mobile Money" → Enter Recipient: Life Bridge Church, Number: 0705 843 553
-</p>
-  <!-- Mobile Money -->
-  <h3 style="text-align:center; color:var(--dark-blue); margin:30px 0 15px;">Mobile Money - Uganda</h3>
-  <div class="grid">
-    <div class="card" style="text-align:center;">
-      <h4>MTN Mobile Money</h4>
-      <p class="give-number">0705 843 553</p>
-      <p class="give-number">0781 087 353</p>
-      <p style="margin-top:10px; font-size:0.9em; opacity:0.8;">A/C Name: Life Bridge Church</p>
-    </div>
-    
-    <div class="card" style="text-align:center;">
-      <h4>Bank Account - UGX</h4>
-      <p><strong>A/C Name:</strong> Life Bridge Church</p>
-      <p class="give-number">UGX 7170011059</p>
-    </div>
-    
-    <div class="card" style="text-align:center;">
-      <h4>Bank Account - USD</h4>
-      <p><strong>A/C Name:</strong> Life Bridge Church</p>
-      <p class="give-number">USD 7170011060</p>
-    </div>
-  </div>
-  
-  <p style="text-align:center; margin-top:20px; font-size:0.9em; opacity:0.7;">For offerings, tithe, seeds, and building fund. Thank you for your generosity.</p>
-</section>
-<h2>Photo Gallery</h2>
+<h2>Give / Tithe / Offerings</h2>
+<p style="text-align:center; max-width:700px; margin:0 auto 25px;">Your giving helps us bridge lives to Christ through ministry, outreach, and community support. "Bring the whole tithe into the storehouse" - Malachi 3:10</p>
 
-<div class="gallery">
-<img src="images/church1.jpg" alt="LifeBridge Church">
-<img src="images/church2.jpg" alt="LifeBridge Church Worship">
+<h3 style="text-align:center; color:#0b4d78; margin-bottom:15px;">International Donations</h3>
+<div style="display:flex; gap:12px; flex-wrap:wrap; justify-content:center; margin-top:20px;">
+<a href="https://www.worldremit.com" class="btn" style="background:#0b4d78;" target="_blank">🌍 Send via WorldRemit</a>
+<a href="https://www.sendwave.com" class="btn" style="background:#0b4d78;" target="_blank">📱 Send via Sendwave</a>
+<a href="https://wa.me/256705843553?text=Hello%20LifeBridge%20Church%2C%20I%20want%20to%20give%20my%20offering" class="btn whatsapp" target="_blank">💬 WhatsApp to Give</a>
 </div>
+
+<div style="background:#e6f4ff; padding:18px; border-radius:8px; margin-top:20px; text-align:center;">
+<p style="font-weight:bold; color:#0b4d78; margin-bottom:8px;">How to send from abroad:</p>
+<p>1. Click WorldRemit or Sendwave button</p>
+<p>2. Select your country → Choose "Uganda"</p>
+<p>3. Select "Mobile Money" → MTN Mobile Money</p>
+<p>4. Recipient: <strong>Life Bridge Church</strong></p>
+<p>5. Number: <strong>0776 420 855</strong></p>
+<p style="font-size:0.9em; margin-top:10px; opacity:0.8;">Funds arrive instantly. No direct links needed.</p>
+</div>
+
+<h3 style="text-align:center; color:#0b4d78; margin:30px 0 15px;">Mobile Money - Uganda</h3>
+<div class="contact-grid">
+<div class="card" style="text-align:center;">
+<h4>MTN Mobile Money</h4>
+<p style="font-size:1.3rem; font-weight:bold; color:#0b4d78;">0705 843 553</p>
+<p style="font-size:1.3rem; font-weight:bold; color:#0b4d78;">0781 087 353</p>
+<p style="margin-top:10px; font-size:0.9em; opacity:0.8;">A/C Name: Life Bridge Church</p>
+</div>
+
+<div class="card" style="text-align:center;">
+<h4>Bank Account - UGX</h4>
+<p><strong>A/C Name:</strong> Life Bridge Church</p>
+<p style="font-size:1.3rem; font-weight:bold; color:#0b4d78;">UGX 7170011059</p>
+</div>
+
+<div class="card" style="text-align:center;">
+<h4>Bank Account - USD</h4>
+<p><strong>A/C Name:</strong> Life Bridge Church</p>
+<p style="font-size:1.3rem; font-weight:bold; color:#0b4d78;">USD 7170011060</p>
+</div>
+</div>
+
+<p style="text-align:center; margin-top:20px; font-size:0.9em; opacity:0.7;">For offerings, tithe, seeds, and building fund. Thank you for your generosity.</p>
+</section>
 </div>
 
 <div class="card">
 <h2>Prayer Request</h2>
-
 <form>
-
 <input type="text" placeholder="Your Name">
-
 <input type="email" placeholder="Your Email">
-
 <textarea rows="5" placeholder="Type your prayer request here"></textarea>
-
 <button type="submit">Submit Prayer Request</button>
-
 </form>
-
 </div>
 
 <div class="card">
-
 <h2>Contact Us</h2>
-
 <div class="contact-grid">
-
 <div>
-
 <h3>Phone Numbers</h3>
-
 <p>0758 019 053</p>
 <p>0791 668 311</p>
 <p>0703 594 694</p>
-
 <br>
-
 <h3>WhatsApp</h3>
-
 <p>0705 843 553</p>
-
 </div>
-
 <div>
-
 <h3>Watch Online</h3>
-
-<p>
-Join our services live on YouTube and stay connected with LifeBridge Church.
-</p>
-
-<a href="https://youtube.com/@lifebridgechapelinternatio5611?si=K8NCSc2eBlgGT65T"
-target="_blank"
-class="btn youtube">
-▶ Watch Live
-</a>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-<footer>
-
-<h2>LifeBridge Church Uganda</h2>
-
-<p>Reaching Souls • Raising Disciples • Planting Churches</p>
-
-<br>
-
-<p>
-Founded by Pastor Godfrey Mukwaya in Kajjansi,
-Wakiso District, Uganda (2022)
-</p>
-
-<br>
-
-<p>
-<a href="https://youtube.com/@lifebridgechapelinternatio5611?si=K8NCSc2eBlgGT65T">
-YouTube
-</a>
-|
-<a href="https://wa.me/256705843553">
-WhatsApp
-</a>
-</p>
-
-<br>
-
-<p>
-© 2026 LifeBridge Church Uganda. All Rights Reserved.
-</p>
-
-</footer>
-
-</body>
-</html>
+<p>Join our services live on YouTube and stay connected with LifeBridge Church.</p>
+<a href="https://youtube.com/@lifebridgechapelinternatio5611?si=K8NCScsK8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8NCSc8
